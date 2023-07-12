@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "@apollo/client": "^3.7.17",
+    "@babel/plugin-proposal-private-property-in-object": "^1.0.0",
     "apollo-server-express": "^2.15.0",
     "graphql": "^15.7.2",
-    "react-router-dom": "^6.0.0-beta.0",
-    "@babel/plugin-proposal-private-property-in-object": "^1.0.0"
+    "react-router-dom": "^6.14.1"
   }
 }
