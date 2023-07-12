@@ -6,7 +6,7 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
@@ -38,11 +38,11 @@ function App() {
       <Router>
         <>
           <Navbar />
-          <Switch>
-            <Route path="/" exact component={SearchBooks} />
-            <Route path="/saved" component={SavedBooks} />
-            <Route path="*" component={() => <h1 className='display-2'>Wrong page!</h1>} />
-          </Switch>
+          <Routes>
+            <Route path="/" element={<SearchBooks />} />
+            <Route path="/saved" element={<SavedBooks />} />
+            <Route path="*" element={<h1 className='display-2'>Wrong page!</h1>} />
+          </Routes>
         </>
       </Router>
     </ApolloProvider>
