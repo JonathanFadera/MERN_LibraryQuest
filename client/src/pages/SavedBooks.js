@@ -15,7 +15,7 @@ import { removeBookId } from '../utils/localStorage';
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
   const userData = data?.me || {};
-
+// eslint-disable-next-line
   const [removeBook, { error }] = useMutation(REMOVE_BOOK);
 
   if (loading) {
