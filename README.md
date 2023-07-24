@@ -6,7 +6,6 @@ This Book Search Website allows users to search for books and explore their titl
 
 ## Table of Contents
 
-- [MERN\_LibraryQuest](#mern_libraryquest)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
